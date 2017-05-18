@@ -1,0 +1,97 @@
+* {
+	box-sizing: border-box;
+}
+html, body {
+	font-family: Arial, Helvetica, sans-serif;
+	height: 100%;
+	margin: 0;
+	float: left;
+    min-width: 100%;
+    overflow-x: auto;
+}
+#contenedor {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    line-height: 100%;
+    background-color: #0079bf;  
+    white-space: nowrap;  
+}
+#contenedor > * {
+	min-width: 270px;
+	border-radius: 3px;
+	margin: 5px;
+	vertical-align:top;
+}
+#anadir-lista {
+	background-color: rgba(0,0,0,0.1);
+	color: white;
+	border: none;
+	padding: 5px;
+}
+#anadir-lista::placeholder {
+	color: rgba(255,255,255,0.5);
+}
+.lista > #anadir-lista {
+	color: black;
+	width: 260px;
+}
+.lista > #anadir-lista::placeholder {
+	color: rgba(0,0,0,0.5);
+}
+.lista {
+	background-color: #e2e4e6;
+	padding: 0;
+	display: inline-block;
+}
+.lista > * {
+	margin: 0 5px 5px;
+}
+.lista > *:first-child {
+	margin: 5px;
+}
+#boton-guardar-lista,
+#boton-guardar-tarjeta {
+	background-color: #5cb248;
+	font-weight: bold;
+	color: white;
+	border: none;
+	border-radius: 3px;
+}
+a.boton-equis {
+	color: gray;
+	text-decoration: none;
+	font-weight: bolder;
+	margin-left: 5px;
+}
+.label-lista {
+	font-size: .8em;
+	font-weight: bold;
+	padding: 5px;
+}
+.link-anadir-tarjeta { 
+	color: gray;
+	font-size: .8em;
+	text-decoration: none;
+}
+.tarjeta:not(#nueva-tarjeta) {
+	background-color: white;
+	border-radius: 3px;
+	border: 1px solid lightgray;
+	margin-bottom: 6px;
+	min-height: 20px;
+	width: 260px;
+	white-space: normal;
+	overflow-y: auto;
+	max-height: 100px;
+	padding: 10px;
+	word-break: break-all;
+}
+#nueva-tarjeta-textarea {
+	resize: none;
+	word-wrap: break-word;
+	word-break: break-word;
+	overflow-y: auto;
+	width: 260px;
+	height: 100px;
+}
